@@ -7,8 +7,7 @@
 *******************************
 [rewrite_local]
 # > FileBall解锁订阅
-^https:\/\/api\.revenuecat\.com\/v\d/(subscribers/\$RCAnonymousID\%(\w)+|receipts)$ url script-response-body https://gitee.com/GalaxySpace/Heartbeats/raw/develop/MyScripts/FileBall.js
-[mitm] 
+^https:\/\/api\.revenuecat\.com\/v\d/(subscribers/\$RCAnonymousID\%(\w)+|receipts)$ url script-response-body https://raw.githubusercontent.com/GalaxySpace/Heartbeats/main/Scripts/FileBall.js
 hostname = api.revenuecat.com
 
 *******************************/
