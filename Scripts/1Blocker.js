@@ -7,7 +7,7 @@
 *******************************
 [rewrite_local]
 # > 1Blocker 解锁订阅
-^https:\/\/api\.revenuecat\.com\/v\d/(subscribers\/\w+-\w+-\w+-\w+-\w+|receipts)$ url script-response-body https://gitee.com/GalaxySpace/Heartbeats/raw/develop/MyScripts/1Blocker.js
+^https:\/\/api\.revenuecat\.com\/v\d/(subscribers\/\w+-\w+-\w+-\w+-\w+|receipts)$ url script-response-body https://raw.githubusercontent.com/GalaxySpace/Heartbeats/main/Scripts/1Blocker.js
 [mitm] 
 hostname = api.revenuecat.com
 
