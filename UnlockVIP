@@ -8,7 +8,7 @@
 // @ScriptURL         https://gitee.com/GalaxySpace/Heartbeats/raw/develop/UnlockVIP.conf
 // ==/UserScript==
 
-hostname = api.revenuecat.com, buy.itunes.apple.com
+hostname = api.revenuecat.com,buy.itunes.apple.com
 
 # > 003 Vpnfast 解锁订阅 （2022-08-21）
 ^https:\/\/buy\.itunes\/apple\.com\/verifyReceipt url script-response-body https://raw.githubusercontent.com/GalaxySpace/Heartbeats/main/Scripts/Vpnfast.js
