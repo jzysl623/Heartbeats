@@ -7,7 +7,7 @@
 *******************************
 [rewrite_local]
 # > V
-^https:\/\/buy\.itunes\/apple\.com\/verifyReceipt url script-response-body https://gitee.com/GalaxySpace/Heartbeats/raw/develop/MyScripts/Vpnfast.js
+^https:\/\/buy\.itunes\/apple\.com\/verifyReceipt url script-response-body https://raw.githubusercontent.com/GalaxySpace/Heartbeats/main/Scripts/Vpnfast.js
 [mitm] 
 hostname = buy.itunes.apple.com
 
