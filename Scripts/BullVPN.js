@@ -9,8 +9,7 @@
 [rewrite_local]
 
 # BUllVPN（2022-08-23)
-^https?:\/\/client-api\.blackbull\.news\/v\d\/(user\/info|session\/connect) url script-response-body https://raw.githubusercontent.com/ddgksf2013/Cuttlefish/master/Crack/appraven.js
-
+^https?:\/\/client-api\.blackbull\.news\/v\d\/(user\/info|session\/connect) url script-response-body https://raw.githubusercontent.com/GalaxySpace/Heartbeats/main/Scripts/BullVPN.js
 [mitm] 
 hostname = client-api.blackbull.news
 
