@@ -23,7 +23,7 @@ if (url.indexOf(tmp1) != -1) {
 	var body = $response.body.replace(/type:\w+/g,'type:pay').replace(/is_pay":\d+/g,'is_pay":1').replace(/days":\d+/g,'days":99999999').replace(/end":".*?"/g,'end":"2999-09-09 09:09:09"');
 }
 
-if (url.indexOf(tmp1) != -1) {
+if (url.indexOf(tmp2) != -1) {
 	var body = $response.body.replace(/status":\d+/g,'status":200').replace(/message":"expire"/g,'message":"trial"');
 }
 $done({body});
