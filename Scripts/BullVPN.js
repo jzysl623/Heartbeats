@@ -9,7 +9,7 @@
 [rewrite_local]
 
 # BUllVPN（2022-08-23)
-^https?:\/\/client-api\.blackbull\.news\/v\d\/(user\/info|session\/connect) url script-response-body https://raw.githubusercontent.com/GalaxySpace/Heartbeats/main/Scripts/BullVPN.js
+^https?:\/\/client-api\.blackbull\.news\/v2\/(user\/info|session\/connect) url script-response-body https://raw.githubusercontent.com/GalaxySpace/Heartbeats/main/Scripts/BullVPN.js
 [mitm] 
 hostname = client-api.blackbull.news
 
@@ -17,18 +17,13 @@ hostname = client-api.blackbull.news
 
 var url = $request.url;
 var obj = JSON.parse($response.body);
-const tmp1 = '/AppRaven/app';
-const tmp2 = '/AppRaven/social';
-const tmp3 = '/AppRaven/buy';
+const tmp1 = '/v2/user/info';
+const tmp2 = '/v2/session/connect';
 
 if (url.indexOf(tmp1) != -1) {
-	var body = $response.body.replace(/premium": false/g, 'premium": true');
-}
-if (url.indexOf(tmp2) != -1) {
-	var body = $response.body.replace(/premium": false/g, 'premium": true');
-}
-if (url.indexOf(tmp3) != -1) {
-	obj={"success":true,"message":"1896165181","isReceiptValid":true,"isSubscriptionActive":true};
-	body = JSON.stringify(obj);
+	var body = $response.body.replace(/type:\w+/g, 'type:pay');
+	var body = $response.body.replace(/is_pay": \d+/g, 'is_pay": 1');
+	var body = $response.body.replace(/days": \d+/g, 'days": 99999999');
+	var body = $response.body.replace(/end": ".*?"/g, 'end": "2999-09-09 09:09:09"');
 }
 $done({body});
