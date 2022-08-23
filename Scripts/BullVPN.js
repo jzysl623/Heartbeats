@@ -16,7 +16,7 @@ hostname = client-api.blackbull.news
 ***********************************/
 
 var url = $request.url;
-var obj = JSON.parse($response.body);
+var objc = JSON.parse($response.body);
 const tmp1 = '/v2/user/info';
 const tmp2 = '/v2/session/connect';
 
