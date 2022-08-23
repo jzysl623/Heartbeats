@@ -23,4 +23,5 @@ const tmp2 = '/v2/session/connect';
 if (url.indexOf(tmp1) != -1) {
 	var body = $response.body.replace(/type:\w+/g,'type:pay').replace(/is_pay":\d+/g,'is_pay":1').replace(/days":\d+/g,'days":99999999').replace(/end":".*?"/g,'end":"2999-09-09 09:09:09"');
 }
+body = JSON.stringify(objc);
 $done({body});
