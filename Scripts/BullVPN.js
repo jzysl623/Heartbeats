@@ -24,6 +24,6 @@ if (url.indexOf(tmp1) != -1) {
 }
 
 if (url.indexOf(tmp2) != -1) {
-	var body = $response.body.replace(/status":\d+/g,'status":200').replace(/message":"expire"/g,'message":"trial"');
+	var body = $response.body.replace(/status":110/g,'status":200').replace(/message":"expire"/g,'message":"trial"');
 }
 $done({body});
