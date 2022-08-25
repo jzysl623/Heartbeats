@@ -9,7 +9,7 @@
 [rewrite_local]
 
 # VPNPlus（2022-08-26)
-^https?:\/\/206.189.78.230\/receipt\/apple url script-response-body https://raw.githubusercontent.com/GalaxySpace/Heartbeats/main/Scripts/VPNPlus.js
+^https?:\/\/206\.189\.78\.230\/receipt\/apple url script-response-body https://raw.githubusercontent.com/GalaxySpace/Heartbeats/main/Scripts/VPNPlus.js
 [mitm] 
 hostname = 206.189.78.230
 
