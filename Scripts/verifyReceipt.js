@@ -1,7 +1,7 @@
 var head = $request.headers;
 var ua = head['User-Agent'];
 var objc = JSON.parse($response.body); 
-if (ua.indexOf('fogu') != -1) {
+if (ua.indexOf('VPN') != -1) {
 objc = {
 	"environment": "Production",
 	"receipt": {
