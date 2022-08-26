@@ -1,8 +1,8 @@
 var head = $request.headers;
 var ua = head['User-Agent'];
+var objc = JSON.parse($response.body); 
 if (ua.indexOf('fogu') != -1) {
-var obj = JSON.parse($response.body); 
-obj = {
+objc = {
 	"environment": "Production",
 	"receipt": {
 		"receipt_type": "Production",
@@ -119,7 +119,5 @@ obj = {
 	],
 	"status": 0
 }
-	body = JSON.stringify(objc);
 }
-
-$done();
+$done({body:JSON.stringify(obj)});
