@@ -1,6 +1,7 @@
 var head = $request.headers;
 var ua = head['User-Agent'];
 var objc = JSON.parse($response.body); 
+
 // vpnfast
 if (ua.indexOf('VPN') != -1) {
 objc = {
