@@ -19,6 +19,6 @@ var url = $request.url;
 const tmp1 = '/receipt/apple';
 
 if (url.indexOf(tmp1) != -1) {
-	var body = $response.body.replace(/ExpireTime":\d+/g,'ExpireTime":92503620603');
+	var body = $response.body.replace(/ExpireTime":\d/g,'ExpireTime":92503620603');
 }
 $done({body});
