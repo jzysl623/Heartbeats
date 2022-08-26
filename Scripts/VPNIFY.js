@@ -1,6 +1,6 @@
 /******************************
 
-脚本功能：V
+脚本功能：VPNIFY 解锁会员
 软件版本：2.1.6
 使用声明：⚠️此脚本仅供学习与交流，
         请勿转载与贩卖！⚠️⚠️⚠️
@@ -15,8 +15,7 @@ hostname = buy.itunes.apple.com
 
 
 var obj = JSON.parse($response.body); 
-obj = {
-	 "environment": "Production",
+obj = { "environment": "Production",
     "receipt": {
         "receipt_type": "Production",
         "adam_id": 150325139500,
@@ -89,6 +88,5 @@ obj = {
         }
     ],
     "status": 0
-
 }
 $done({body:JSON.stringify(obj)});
