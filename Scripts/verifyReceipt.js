@@ -246,7 +246,7 @@ objc = {
 // GoodVPN
 if (ua.indexOf('Violet') != -1) {
 objc = {
-  "environment": "Production",
+    "environment": "Production",
     "receipt": {
         "receipt_type": "Production",
         "adam_id": 15766418520,
