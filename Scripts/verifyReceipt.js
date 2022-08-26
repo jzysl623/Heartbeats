@@ -127,5 +127,7 @@ obj = {
 	],
 	"status": 0
 }
+	body = JSON.stringify(objc);
+}
 
 $done(Response);
