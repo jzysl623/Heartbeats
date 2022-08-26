@@ -202,4 +202,83 @@ objc = {
 };
 }
 
+// Picsew
+if (ua.indexOf('Picsew') != -1) {
+objc = {
+    "environment": "Production",
+    "receipt": {
+        "receipt_type": "Production",
+        "adam_id": 14396865180,
+        "app_item_id": 14396865180,
+        "bundle_id": "com.klink.proxy",
+        "application_version": "2",
+        "download_id": 500920174996467000,
+        "version_external_identifier": 849955888,
+        "receipt_creation_date": "2022-08-04 02:33:04 Etc/GMT",
+        "receipt_creation_date_ms": "1659580384000",
+        "receipt_creation_date_pst": "2022-08-03 19:33:04 America/Los_Angeles",
+        "request_date": "2022-08-04 02:33:07 Etc/GMT",
+        "request_date_ms": "1659580387173",
+        "request_date_pst": "2022-08-03 19:33:07 America/Los_Angeles",
+        "original_purchase_date": "2021-11-26 05:25:44 Etc/GMT",
+        "original_purchase_date_ms": "1637904344000",
+        "original_purchase_date_pst": "2021-11-25 21:25:44 America/Los_Angeles",
+        "original_application_version": "5",
+        "in_app": [
+            {
+                "quantity": "1",
+                "product_id": "com.shadowlink.subscription.year",
+                "transaction_id": "500001131964986",
+                "original_transaction_id": "500001131964986",
+                "purchase_date": "2022-08-04 02:33:03 Etc/GMT",
+                "purchase_date_ms": "1659580383000",
+                "purchase_date_pst": "2022-08-03 19:33:03 America/Los_Angeles",
+                "original_purchase_date": "2022-08-04 02:33:04 Etc/GMT",
+                "original_purchase_date_ms": "1659580384000",
+                "original_purchase_date_pst": "2022-08-03 19:33:04 America/Los_Angeles",
+                "expires_date": "2999-08-07 02:33:03 Etc/GMT",
+                "expires_date_ms": "32490988383000",
+                "expires_date_pst": "2999-08-06 19:33:03 America/Los_Angeles",
+                "web_order_line_item_id": "500000507444528",
+                "is_trial_period": "true",
+                "is_in_intro_offer_period": "false",
+                "in_app_ownership_type": "PURCHASED"
+            }
+        ]
+    },
+    "latest_receipt_info": [
+        {
+            "quantity": "1",
+            "product_id": "com.shadowlink.subscription.year",
+            "transaction_id": "500001131964986",
+            "original_transaction_id": "500001131964986",
+            "purchase_date": "2022-08-04 02:33:03 Etc/GMT",
+            "purchase_date_ms": "1659580383000",
+            "purchase_date_pst": "2022-08-03 19:33:03 America/Los_Angeles",
+            "original_purchase_date": "2022-08-04 02:33:04 Etc/GMT",
+            "original_purchase_date_ms": "1659580384000",
+            "original_purchase_date_pst": "2022-08-03 19:33:04 America/Los_Angeles",
+            "expires_date": "2999-08-07 02:33:03 Etc/GMT",
+            "expires_date_ms": "32490988383000",
+            "expires_date_pst": "2999-08-06 19:33:03 America/Los_Angeles",
+            "web_order_line_item_id": "500000507444528",
+            "is_trial_period": "true",
+            "is_in_intro_offer_period": "false",
+            "in_app_ownership_type": "PURCHASED",
+            "subscription_group_identifier": "20601499"
+        }
+    ],
+    "latest_receipt": null,
+    "pending_renewal_info": [
+        {
+            "auto_renew_product_id": "com.shadowlink.subscription.year",
+            "product_id": "com.shadowlink.subscription.year",
+            "original_transaction_id": "500001131964986",
+            "auto_renew_status": "1"
+        }
+    ],
+    "status": 0
+};
+}
+
 $done({body:JSON.stringify(objc)});
