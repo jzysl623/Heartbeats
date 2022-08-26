@@ -79,7 +79,7 @@ obj = {
             "subscription_group_identifier": "20609327"
         }
     ],
-    "latest_receipt": 
+    "latest_receipt": null, 
     "pending_renewal_info": [
         {
             "auto_renew_product_id": "vpnify_sub_12month",
