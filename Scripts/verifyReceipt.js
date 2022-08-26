@@ -195,7 +195,7 @@ objc = {
             "auto_renew_product_id": "com.shadowlink.subscription.year",
             "product_id": "com.shadowlink.subscription.year",
             "original_transaction_id": "500001131964986",
-            "auto_renew_status": "1"
+            "auto_renew_status": "0"
         }
     ],
     "status": 0
@@ -239,6 +239,80 @@ objc = {
   },
   "status": 0,
   "environment": "Production"
+};
+}
+
+
+// GoodVPN
+if (ua.indexOf('Violet') != -1) {
+objc = {
+  "environment": "Production",
+    "receipt": {
+        "receipt_type": "Production",
+        "adam_id": 15766418520,
+        "app_item_id": 15766418520,
+        "bundle_id": "com.playstone.Violet",
+        "application_version": "106",
+        "download_id": 501563930048711524,
+        "version_external_identifier": 850129030,
+        "receipt_creation_date": "2022-07-12 08:03:16 Etc/GMT",
+        "receipt_creation_date_ms": "1657612996000",
+        "receipt_creation_date_pst": "2022-07-12 01:03:16 America/Los_Angeles",
+        "request_date": "2022-07-12 08:09:26 Etc/GMT",
+        "request_date_ms": "1657613366405",
+        "request_date_pst": "2022-07-12 01:09:26 America/Los_Angeles",
+        "original_purchase_date": "2022-07-12 08:09:26 Etc/GMT",
+        "original_purchase_date_ms": "1657613366299",
+        "original_purchase_date_pst": "2022-07-12 01:09:26 America/Los_Angeles",
+        "original_application_version": "47",
+        "in_app": [{
+            "quantity": "1",
+            "product_id": "com.playstone.violet.premium.annual",
+            "transaction_id": "500001114040110",
+            "original_transaction_id": "500001114040110",
+            "purchase_date": "2022-07-12 07:13:03 Etc/GMT",
+            "purchase_date_ms": "1657609983000",
+            "purchase_date_pst": "2022-07-12 00:13:03 America/Los_Angeles",
+            "original_purchase_date": "2022-07-12 07:13:03 Etc/GMT",
+            "original_purchase_date_ms": "1657609983000",
+            "original_purchase_date_pst": "2022-07-12 00:13:03 America/Los_Angeles",
+            "expires_date": "2999-07-19 07:13:03 Etc/GMT",
+            "expires_date_ms": "32489363583000",
+            "expires_date_pst": "2999-07-19 00:13:03 America/Los_Angeles",
+            "web_order_line_item_id": "500000498511998",
+            "is_trial_period": "true",
+            "is_in_intro_offer_period": "false",
+            "in_app_ownership_type": "PURCHASED"
+        }]
+    },
+    "latest_receipt_info": [{
+        "quantity": "1",
+        "product_id": "com.playstone.violet.premium.annual",
+        "transaction_id": "500001114040110",
+        "original_transaction_id": "500001114040110",
+        "purchase_date": "2022-07-12 07:13:03 Etc/GMT",
+        "purchase_date_ms": "1657609983000",
+        "purchase_date_pst": "2022-07-12 00:13:03 America/Los_Angeles",
+        "original_purchase_date": "2022-07-12 07:13:03 Etc/GMT",
+        "original_purchase_date_ms": "1657609983000",
+        "original_purchase_date_pst": "2022-07-12 00:13:03 America/Los_Angeles",
+        "expires_date": "2999-07-19 07:13:03 Etc/GMT",
+        "expires_date_ms": "32489363583000",
+        "expires_date_pst": "2999-07-19 00:13:03 America/Los_Angeles",
+        "web_order_line_item_id": "500000498511998",
+        "is_trial_period": "true",
+        "is_in_intro_offer_period": "false",
+        "in_app_ownership_type": "PURCHASED",
+        "subscription_group_identifier": "20871223"
+    }],
+    "latest_receipt": null,
+    "pending_renewal_info": [{
+        "auto_renew_product_id": "com.playstone.violet.premium.annual",
+        "product_id": "com.playstone.violet.premium.annual",
+        "original_transaction_id": "500001114040110",
+        "auto_renew_status": "0"
+    }],
+    "status": 0
 };
 }
 
