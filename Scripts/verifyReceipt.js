@@ -1,5 +1,12 @@
 var head = $request.headers;
 var ua = head['User-Agent'];
+Status = 'HTTP/1.1 200 OK';
+Headers = {"Content-Type": "application/json"};
+
+const Response = {
+    status: Status,
+    headers: Headers
+};
 
 if (ua.indexOf('fogu') != -1) {
 var obj = JSON.parse($response.body); 
@@ -120,15 +127,5 @@ obj = {
 	],
 	"status": 0
 }
-
-
-Status = 'HTTP/1.1 200 OK';
-Headers = {"Content-Type": "application/json"};
-
-const Response = {
-    status: Status,
-    headers: Headers,
-    body: JSON.stringify(Body)
-};
 
 $done(Response);
