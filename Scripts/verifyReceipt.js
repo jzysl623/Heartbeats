@@ -317,7 +317,7 @@ objc = {
 }
 
 // vpnify
-if (ua.indexOf('vpnify') != -1) {
+if (ua.indexOf('iOS') != -1) {
 objc = {
         "environment": "Production",
     "receipt": {
@@ -395,7 +395,7 @@ objc = {
 };
 }
 
-// vpnify
+// fogu
 if (ua.indexOf('fogu') != -1) {
 objc = {
 	"environment": "Production",
@@ -474,83 +474,5 @@ objc = {
 };
 }
 
-// vpnify
-if (ua.indexOf('fogu') != -1) {
-objc = {
-        "environment": "Production",
-    "receipt": {
-        "receipt_type": "Production",
-        "adam_id": 11806255320,
-        "app_item_id": 11806255320,
-        "bundle_id": "com.fogu.tunnel",
-        "application_version": "44",
-        "download_id": 501182866804389000,
-        "version_external_identifier": 845354296,
-        "receipt_creation_date": "2022-07-12 23:45:14 Etc/GMT",
-        "receipt_creation_date_ms": "1657669514000",
-        "receipt_creation_date_pst": "2022-07-12 16:45:14 America/Los_Angeles",
-        "request_date": "2022-07-12 23:45:17 Etc/GMT",
-        "request_date_ms": "1657669517561",
-        "request_date_pst": "2022-07-12 16:45:17 America/Los_Angeles",
-        "original_purchase_date": "2022-02-27 00:18:10 Etc/GMT",
-        "original_purchase_date_ms": "1645921090000",
-        "original_purchase_date_pst": "2022-02-26 16:18:10 America/Los_Angeles",
-        "original_application_version": "44",
-        "in_app": [
-            {
-                "quantity": "1",
-                "product_id": "g12",
-                "transaction_id": "500001114544150",
-                "original_transaction_id": "500001114544150",
-                "purchase_date": "2022-07-12 23:45:14 Etc/GMT",
-                "purchase_date_ms": "1657669514000",
-                "purchase_date_pst": "2022-07-12 16:45:14 America/Los_Angeles",
-                "original_purchase_date": "2022-07-12 23:45:14 Etc/GMT",
-                "original_purchase_date_ms": "1657669514000",
-                "original_purchase_date_pst": "2022-07-12 16:45:14 America/Los_Angeles",
-                "expires_date": "2999-08-12 23:45:14 Etc/GMT",
-                "expires_date_ms": "32491496714000",
-                "expires_date_pst": "2999-08-12 16:45:14 America/Los_Angeles",
-                "web_order_line_item_id": "500000498781676",
-                "is_trial_period": "true",
-                "is_in_intro_offer_period": "false",
-                "in_app_ownership_type": "PURCHASED"
-            }
-        ]
-    },
-    "latest_receipt_info": [
-        {
-            "quantity": "1",
-            "product_id": "g12",
-            "transaction_id": "500001114544150",
-            "original_transaction_id": "500001114544150",
-            "purchase_date": "2022-07-12 23:45:14 Etc/GMT",
-            "purchase_date_ms": "1657669514000",
-            "purchase_date_pst": "2022-07-12 16:45:14 America/Los_Angeles",
-            "original_purchase_date": "2022-07-12 23:45:14 Etc/GMT",
-            "original_purchase_date_ms": "1657669514000",
-            "original_purchase_date_pst": "2022-07-12 16:45:14 America/Los_Angeles",
-            "expires_date": "2999-08-12 23:45:14 Etc/GMT",
-            "expires_date_ms": "32491496714000",
-            "expires_date_pst": "2999-08-12 16:45:14 America/Los_Angeles",
-            "web_order_line_item_id": "500000498781676",
-            "is_trial_period": "true",
-            "is_in_intro_offer_period": "false",
-            "in_app_ownership_type": "PURCHASED",
-            "subscription_group_identifier": "20375794"
-        }
-    ],
-    "latest_receipt": null,
-    "pending_renewal_info": [
-        {
-            "auto_renew_product_id": "g12",
-            "product_id": "g12",
-            "original_transaction_id": "500001114544150",
-            "auto_renew_status": "0"
-        }
-    ],
-    "status": 0
-};
-}
 
 $done({body:JSON.stringify(objc)});
