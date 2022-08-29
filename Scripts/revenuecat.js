@@ -31,7 +31,7 @@ objc = {
         "purchase_date": "2020-02-11T07:52:54Z"
       }
     }
-  }
+  };
 }
 
 // Fileball
@@ -71,7 +71,7 @@ objc = {
       }
     },
     "subscriptions": {}
-  }
+  };
 }
 
 $done({body:JSON.stringify(objc)});
